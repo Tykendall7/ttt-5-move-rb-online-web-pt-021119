@@ -1,6 +1,4 @@
-def initialize
-  @board = Array.new(9, " ")
-end
+
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -15,6 +13,6 @@ def input_to_index (user_input)
   user_input.to_i - 1
 end
 
-def move(index, character)
-  board[index] = character
+def move(board, index, player_character = "X")
+  board[index] = player_character
 end
