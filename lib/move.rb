@@ -11,6 +11,6 @@ def input_to_index (user_input)
   user_input.to_i - 1
 end
 
-def move (index, current_player="X")
-  board [index.to_i] = current_player
+def move(index, token)
+  board [index.to_i] = token
 end
